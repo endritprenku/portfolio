@@ -22,7 +22,7 @@
 				<template v-for="(route, i) in routes" :key="i">
 					<a @click="movePage(route.to)" class="text-green-500 text-lg hover:text-green-200 duration-300">{{ route.name }}</a>
 				</template>
-			</div>			
+			</div>		
 		</section>
 		<Footer />
 	</main>
@@ -40,6 +40,10 @@
 		{
 			name: 'About',
 			to: 'About'
+		},
+		{
+			name: 'Projects',
+			to: 'Projects'
 		}
 	]
 </script>
