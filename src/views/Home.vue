@@ -6,7 +6,7 @@
   
 	  <section class="section bg-slate-50 dark:bg-slate-800">
 		<strong
-		  class="text-3xl inline-block mb-8 text-slate-900 dark:text-slate-200"
+		  class="inline-block mb-8 text-3xl text-slate-900 dark:text-slate-200"
 		>
 		  Welcome to<span class="text-green-500"> Endrit's </span
 		  ><span class="text-pink-500">Page</span> 👏🏻
@@ -17,7 +17,7 @@
 		<a
 		  href="https://github.com/endritprenku"
 		  target="_blank"
-		  class="bg-gray-600 hover:bg-opacity-75 focus:ring-2 text-gray-50 px-5 py-2 rounded-lg inline-block"
+		  class="inline-block px-5 py-2 bg-gray-600 rounded-lg hover:bg-opacity-75 focus:ring-2 text-gray-50"
 		>
 		  <i class="fab fa-github"></i>
 		  <span class="mx-2">Github</span>
@@ -30,7 +30,7 @@
 		  class="flex flex-col justify-center h-full"
 		>
 		  <strong
-			class="text-2xl inline-block mb-4 text-center text-slate-900 dark:text-slate-200"
+			class="inline-block mb-4 text-2xl text-center text-slate-900 dark:text-slate-200"
 		  >
 			✨ <span class="text-red-500"> Quote </span> ✨
 		  </strong>
@@ -40,7 +40,7 @@
 			<ul class="my-4 space-y-3">
 			  <li>
 				<a
-				  class="inline-block w-full min-h-4rem flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 dark:bg-gray-600 dark:text-white break-words"
+				  class="flex items-center inline-block w-full p-3 text-base font-bold text-gray-900 break-words rounded-lg min-h-4rem bg-gray-50 dark:bg-gray-600 dark:text-white"
 				>
 				  <span class="flex-1 ml-3">{{ quote }}</span>
 				</a>
@@ -57,7 +57,7 @@
 	  </section>
   
 	  <section class="mb-6">
-		<h1 class="text-xl mb-3 text-slate-900 dark:text-slate-200">
+		<h1 class="mb-3 text-xl text-slate-900 dark:text-slate-200">
 		  <i class="fa fa-chevron-right"></i>
 		  Menu
 		</h1>
@@ -65,7 +65,7 @@
 		  <template v-for="(route, i) in routes" :key="i">
 			<a
 			  @click="movePage(route.to)"
-			  class="text-green-500 text-lg hover:text-green-200 duration-300"
+			  class="text-lg text-green-500 duration-300 hover:text-green-200"
 			  >{{ route.name }}</a
 			>
 		  </template>

@@ -4,10 +4,10 @@
 		<DarkBtn />
 	  </section>
 	  
-	  <section class="bg-slate-50 dark:bg-slate-800 py-8 px-5 rounded">
+	  <section class="px-5 py-8 rounded bg-slate-50 dark:bg-slate-800">
 		<div>
 		  <BackBtn />
-		  <p class="text-3xl my-2 font-medium text-slate-900 dark:text-slate-200">
+		  <p class="my-2 text-3xl font-medium text-slate-900 dark:text-slate-200">
 			Hello, I'm {{ about.name }}
 		  </p>
 		  <small class="text-slate-600 dark:text-slate-400">

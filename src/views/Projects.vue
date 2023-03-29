@@ -4,22 +4,22 @@
 		<DarkBtn />
 	  </section>
   
-	  <section class="bg-slate-50 dark:bg-slate-800 py-8 px-5 rounded">
+	  <section class="px-5 py-8 rounded bg-slate-50 dark:bg-slate-800">
 		<div>
 		  <BackBtn />
-		  <p class="text-2xl my-3 font-medium text-slate-900 dark:text-slate-200">
+		  <p class="my-3 text-2xl font-medium text-slate-900 dark:text-slate-200">
 			Here are some coding<span class="text-violet-500"> projects </span>I
 			have<span class="text-pink-500"> developed </span>and completed 👨‍💻
 		  </p>
 		</div>
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+		<div class="grid grid-cols-1 gap-5 md:grid-cols-2">
 		  <template v-for="(item, i) in projects" :key="i">
 			<div class="group">
 			  <div class="relative">
 				<a target="_blank" :href="item.href">
 				  <img class="h-auto max-w-full rounded-lg" :src="item.image" />
 				  <p
-					class="opacity-0 group-hover:opacity-100 absolute inset-0 bg-black text-white flex items-center justify-center rounded-lg"
+					class="absolute inset-0 flex items-center justify-center text-white bg-black rounded-lg opacity-0 group-hover:opacity-100"
 				  >
 					{{ item.description }}
 				  </p>
