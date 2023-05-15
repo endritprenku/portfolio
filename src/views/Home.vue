@@ -115,6 +115,10 @@
   {
 	name: 'Projects',
 	to: 'Projects'
+  },
+  {
+	name: 'Notes',
+	to: 'Notes'
   }
    ]
   

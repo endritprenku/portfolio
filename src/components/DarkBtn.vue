@@ -6,13 +6,13 @@ const toggleDark = useToggle(isDark);
 
 <template>
   <button
-    class="p-2 text-slate-600 hover:text-slate-800 dark:text-slate-300 dark:hover:text-slate-100 focus-visible:ring-2 focus-visible:ring-green-400 rounded-lg"
+    class="p-2 rounded-lg text-slate-600 hover:text-slate-800 dark:text-slate-300 dark:hover:text-slate-100 focus-visible:ring-2 focus-visible:ring-green-400"
     @click="toggleDark()"
   >
     <svg
       v-if="!isDark"
       xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
+      class="w-6 h-6"
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -23,7 +23,7 @@ const toggleDark = useToggle(isDark);
     <svg
       v-else
       xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
+      class="w-6 h-6"
       viewBox="0 0 20 20"
       fill="currentColor"
     >
